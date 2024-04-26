@@ -1,0 +1,52 @@
+{
+  "name": "tuneclient",
+  "version": "1.0.0",
+  "description": "Tune Client",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.0.1",
+    "adm-zip": "^0.5.9",
+    "async": "^0.9.2",
+    "chalk": "^4.1.2",
+    "decompress": "^4.2.1",
+    "decompress-targz": "^4.1.1",
+    "decompress-unzip": "^4.0.1",
+    "ejs-electron": "^2.1.1",
+    "electron-progressbar": "^2.0.1",
+    "electron-squirrel-startup": "^1.0.0",
+    "electron-updater": "^4.6.1",
+    "fs-extra": "^10.0.0",
+    "glob": "^7.2.0",
+    "got": "^9.6.0",
+    "jquery": "^3.6.0",
+    "minecraft-server-util": "^5.2.8",
+    "moment": "^2.29.1",
+    "msmc": "github:SofterDog/msmc",
+    "os": "^0.1.2",
+    "tailwindcss": "^2.2.19",
+    "tailwindscss": "^0.3.0",
+    "url": "^0.11.0",
+    "user-home": "^3.0.0",
+    "uuid": "^8.3.2"
+  },
+  "author": "SofterDog",
+  "license": "MIT",
+  "devDependencies": {
+    "@electron-forge/cli": "^7.4.0",
+    "@electron-forge/maker-deb": "^7.4.0",
+    "@electron-forge/maker-rpm": "^7.4.0",
+    "@electron-forge/maker-squirrel": "^7.4.0",
+    "@electron-forge/maker-zip": "^7.4.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.4.0",
+    "@electron-forge/plugin-fuses": "^7.4.0",
+    "@electron-forge/publisher-github": "^7.4.0",
+    "@electron/fuses": "^1.8.0",
+    "electron": "^30.0.1"
+  }
+}

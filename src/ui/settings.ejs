@@ -1,0 +1,63 @@
+<div id="settingsContainer" class="hiddenElement">
+    <div class="configElements">
+        <div class="configElement">
+            <div class="inputDescription">Memory Slider <br> <small>How much memory should we allocate to the
+                    game</small></div>
+            <label for="inputMemory"></label>
+            <div class="flex flex-1 flex-row items-center">
+                <span id="memoryLabel">2048MB</span>
+                <input type="range" min=2048 max=8192 step=512 id="inputMemory" configProp="java.memory">
+            </div>
+        </div>
+
+        <div class="configElement">
+            <div class="inputDescription">Resolution <br> <small>Initial resolution of the game window</small></div>
+            <div class="inputScreenRes">
+                <div>
+                    <p>Width</p>
+                    <label for="inputWidth"></label>
+                    <input type="number" name="Width" id="inputWidth" configProp="game.resolution.width">
+                </div>
+                <div class="x">X</div>
+                <div>
+                    <p>Height</p>
+                    <label for="inputHeight"></label>
+                    <input type="number" name="Height" id="inputHeight" configProp="game.resolution.height">
+                </div>
+            </div>
+        </div>
+
+        <div class="configElement">
+            <div class="inputDescription">MC Data Directory<br> <small>Minecraft working directory</small></div>
+            <label for="mcDataDirectory"></label>
+            <input type="text" name="mcDataDirectory" id="mcDataDirectory" readonly="readonly" configProp="launcher.mcDataDir">
+            <a class="btnChooseFile" draggable="false" href="#">
+                <button>Choose File</button>
+            </a>
+        </div>
+
+        <div class="configElement">
+            <div class="inputDescription">Fullscreen<br> <small>Initial game window fills your screen</small></div>
+            <label class="switch">
+                <input type="checkbox" configProp="game.fullscreen">
+                <div class="toggleSwitch round"></div>
+            </label>
+        </div>
+
+        <div class="configElement">
+            <div class="inputDescription">Detached Launcher<br> <small>Game window is attached to the launcher</small></div>
+            <label class="switch">
+                <input type="checkbox" configProp="game.detached">
+                <div class="toggleSwitch round"></div>
+            </label>
+        </div>
+
+        <div class="configElement">
+            <div class="inputDescription">Hide Launcher<br> <small>Hide the launcher while game is running</small></div>
+            <label class="switch">
+                <input type="checkbox" configProp="game.hideLauncher">
+                <div class="toggleSwitch round"></div>
+            </label>
+        </div>
+    </div>
+</div>
